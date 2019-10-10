@@ -1,14 +1,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      PDF Viewer
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-button expand="block" (click)="openPDFBrowserBlank()">Open PDF - InAppBrowser Blank</ion-button>
+  <ion-button expand="block" (click)="openPDFBrowserSystem()">Open PDF - InAppBrowser System</ion-button>
+  <ion-button expand="block" (click)="openPDFViewer()">Open PDF - Document Viewer</ion-button>
+  <ion-button expand="block" (click)="openPDFOpenerLocal()">Open PDF- File Opener Local</ion-button>
+  <ion-button expand="block" (click)="openPDFOpenerURL()">Open PDF- File Opener URL</ion-button>
 </ion-content>
